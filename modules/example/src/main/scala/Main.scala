@@ -14,6 +14,10 @@ object HelloWorldImpl extends HelloWorldService[IO] {
       case Some(t) => Greeting(s"Hello $name from $t!")
     }
   }
+
+  def search(queryString: String) : IO[SearchResults] = IO.pure {
+    SearchResults(s"Something $queryString")
+  }
 }
 
 object Routes {
