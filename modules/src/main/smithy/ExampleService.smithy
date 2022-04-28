@@ -1,4 +1,4 @@
-namespace example
+namespace smithy4s.hello
 
 use smithy4s.api#simpleRestJson
 
